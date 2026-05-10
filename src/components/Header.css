@@ -1,0 +1,27 @@
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(7,8,15,0.88);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  max-width: 1280px; margin: 0 auto; padding: 0 2rem;
+  height: 64px; display: flex; align-items: center; justify-content: space-between;
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-icon { font-size: 1.7rem; }
+.logo-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.35rem; font-weight: 800; letter-spacing: -0.5px;
+}
+.total-badge {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.25);
+  color: var(--accent2); padding: 6px 14px; border-radius: 100px;
+  font-size: 0.82rem; font-weight: 500;
+}
+.badge-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent); animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.3)} }
